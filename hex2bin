@@ -1,0 +1,6 @@
+#!/usr/bin/perl
+
+while (<>) {
+    s/([0-9A-Fa-f][0-9A-Fa-f])/pack("C",hex($1))/eg;
+    print;
+}
